@@ -60,7 +60,7 @@
                         <li><a class="nav-link" href="#about">About Us</a></li>
 			<li><a class="nav-link" href="#wedding">Wedding</a></li>
                         <li><a class="nav-link" href="#events">Events</a></li>
-                        <li><a class="nav-link" href="#events">Map</a></li>
+                        <li><a class="nav-link" href="#map">Map</a></li>
 			<li><a class="nav-link" href="#contact">RSVP</a></li>
                     </ul>
                 </div>
@@ -507,7 +507,7 @@
 	</div>
 	<!-- End Events -->
 		<!-- Start MAP -->
-	<div id="contact" class="contact-box">
+	<div id="map" class="contact-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -523,7 +523,15 @@
 					</div>
 				</div>
 			</div>
-			</div>
+<div>
+<form id="contactform" action="//formspree.io/shahid88.ar@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your name">
+    <input type="email" name="_replyto" placeholder="Your email">
+    <textarea name="message" placeholder="Your message"></textarea>
+    <input type="submit" value="Send">
+</form>
+</div>
+	        </div>
 	</div>
 	<!-- End MAP -->
 
@@ -540,7 +548,8 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 				  <div class="contact-block">
-					<form id="contactForm">
+					<!--form id="contactForm"-->
+					<form id="contactform" action="//formspree.io/shahid88.ar@gmail.com" method="POST">
 					  <div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
@@ -580,7 +589,8 @@
 						</div>
 						<div class="col-md-12">
 							<div class="form-group"> 
-								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+								<!--textarea class="form-control" name="message" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea-->
+    <textarea name="message" class="form-control" placeholder="Your message"></textarea>
 								<div class="help-block with-errors"></div>
 							</div>
 							<div class="submit-button text-center">
